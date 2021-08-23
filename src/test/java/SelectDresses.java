@@ -31,7 +31,7 @@ public class SelectDresses extends BaseTest {
         // To change the selected dress, you need to change de digit at the end of summerDressPrinted#
         // To change the payment method, you need to chanege the dashboardPageObjects.paymentMethod_# with "BankWire" or "Check"
         dashboardPageObjects.selectSummerDresses(dashboardPageObjects.summerDressesPrinted3, dashboardPageObjects.paymentMethod_BankWire);
-        Thread.sleep(2000);
+
 
      //   WebElement summerDressesPrinted1 = webDriver.findElement(By.xpath("//*[@id=\"center_column\"]/ul/li[1]/div/div[2]/h5/a"));
 

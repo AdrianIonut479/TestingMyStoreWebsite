@@ -24,7 +24,7 @@ public class RegisterTestMyStore extends BaseTest {
         CreateAccountPageMyStore createAccountObjects = new CreateAccountPageMyStore(webDriver);
         homePageObjects.clickSingInButton();
 
-        homePageObjects.enterEmailAddresTextBox("cineva11@gmail.com");
+        homePageObjects.enterEmailAddresTextBox("cineva14@gmail.com");
         homePageObjects.clickCreateAccountButton();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("uniform-id_gender1")));
         createAccountObjects.clickRadioButtonMr();
@@ -39,7 +39,6 @@ public class RegisterTestMyStore extends BaseTest {
         createAccountObjects.enterAddressCredentials(firstName,lastName,"Endava",
                 "Str XDGDG","Str IDGDJK","Pitesti","Arizona","00000",
                 "United States","Not so much info","345353234","0732489523432","Pit");
-        Thread.sleep(5000);
 
 
         WebElement userNameSpan = webDriver.findElement(By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a/span"));
@@ -48,10 +47,6 @@ public class RegisterTestMyStore extends BaseTest {
             System.out.println("User's name has been introduced corectly");
         }
 
-
-
-
-        Thread.sleep(2000);
 
 
 
